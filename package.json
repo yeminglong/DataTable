@@ -1,0 +1,18 @@
+{
+  "name": "elementplus-data-table",
+  "version": "1.0.2",
+  "private": false,
+  "description": "element plus table DataTable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "DataTable"
+  ],
+  "author": "minglongYe",
+  "license": "ISC",
+  "dependencies": {
+    "element-plus": "^2.8.5"
+  }
+}
