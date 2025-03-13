@@ -11,6 +11,10 @@
     "DataTable"
   ],
   "author": "minglongYe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeminglong/DataTable"
+  },
   "license": "ISC",
   "dependencies": {
     "element-plus": "^2.8.5"
