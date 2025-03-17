@@ -26,7 +26,7 @@
 
 ```html
 <template>
-  <data-table
+  <DataTable
     v-model:page-size="pageSize"
     v-model:current-page="currentPage"
     :data="tableData"
@@ -38,22 +38,49 @@
     :merge-props="['name', 'age']"
   />
 </template>
-
 <script setup>
   import { DataTable } from 'element-plus-data-table/index.js'
   import 'element-plus-data-table/index.css'
 
   const column = [
+    {
+      label: '序号',
+      type: 'rowNumber',
+      width: 55,
+      align: 'center'
+    },
     { prop: 'name', label: '姓名' },
     { prop: 'age', label: '年龄' },
     { prop: 'address', label: '地址' }
   ]
+
   const tableData = [
     { name: '张三', age: 20, address: '北京' },
     { name: '张三', age: 20, address: '上海' },
     { name: '李四', age: 25, address: '广州' },
     { name: '李四', age: 25, address: '深圳' },
-    { name: '王五', age: 30, address: '杭州' }
+    { name: '王五', age: 30, address: '杭州' },
+    { name: '张三', age: 20, address: '北京' },
+    { name: '张三', age: 20, address: '上海' },
+    { name: '李四', age: 25, address: '广州' },
+    { name: '李四', age: 25, address: '深圳' },
+    { name: '王五', age: 30, address: '杭州' },
+    { name: '张三', age: 20, address: '上海' },
+    { name: '李四', age: 25, address: '广州' },
+    { name: '李四', age: 25, address: '深圳' },
+    { name: '王五', age: 30, address: '杭州' },
+    { name: '张三', age: 20, address: '北京' },
+    { name: '张三', age: 20, address: '上海' },
+    { name: '李四', age: 25, address: '广州' },
+    { name: '李四', age: 25, address: '深圳' },
+    { name: '张三', age: 20, address: '上海' },
+    { name: '李四', age: 25, address: '广州' },
+    { name: '李四', age: 25, address: '深圳' },
+    { name: '王五', age: 30, address: '杭州' },
+    { name: '张三', age: 20, address: '北京' },
+    { name: '张三', age: 20, address: '上海' },
+    { name: '李四', age: 25, address: '广州' },
+    { name: '李四', age: 25, address: '深圳' }
   ]
   // 分页相关
   const currentPage = ref(1)
