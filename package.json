@@ -1,8 +1,8 @@
 {
-  "name": "elementplus-data-table",
-  "version": "1.0.4",
+  "name": "element-plus-data-table",
+  "version": "1.0.5",
   "private": false,
-  "description": "element plus table DataTable",
+  "description": "element-plus use Table  Pagination group created DataTable",
   "main": "index.js",
   "files": ["index.css","index.css.gz","index.js","index.js.gz","index.umd.cjs"],
   "scripts": {
