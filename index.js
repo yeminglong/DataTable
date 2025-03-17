@@ -10275,12 +10275,14 @@ const sy = ht(X0, {
       const s = a.row, i = a.$index, u = a.column, c = s[l], d = e.pageNo, v = e.pageSize, b = {
         row: s,
         value: c,
+        cellValue: c,
         prop: l,
         $index: i,
+        index: i,
         pageNo: d,
         pageSize: v
       }, f = e.formatter(s, u, c, i);
-      return f && (b.value = f), le("span", null, [e.render(b) ?? b.value]);
+      return f && (b.value = f, b.cellValue = f), le("span", null, [e.render(b) ?? b.value]);
     }, o = () => {
       var a;
       return (a = e.children) != null && a.length ? e.children.map((l, s) => le(Ae("TableHeaderColumn"), Dt({
@@ -10753,7 +10755,10 @@ const cy = (e, t) => {
       }, 8, ["locale"]);
     };
   }
-}), gy = /* @__PURE__ */ cy(vy, [["__scopeId", "data-v-4c196143"]]);
+}), hy = /* @__PURE__ */ cy(vy, [["__scopeId", "data-v-4c196143"]]), my = function(e) {
+  e.component("DataTable", hy);
+};
 export {
-  gy as DataTable
+  hy as DataTable,
+  my as default
 };

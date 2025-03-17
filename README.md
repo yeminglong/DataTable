@@ -10,21 +10,21 @@
 
 ![效果图](./Snipaste_2025-03-13_04-48-31.png '效果图')
 
-| 属性            | 描述                   | 类型                                                | 默认值                                    |
-| --------------- | ---------------------- | --------------------------------------------------- | ----------------------------------------- |
-| layout          | 分页布局               | String                                              | 'total, sizes, prev, pager, next, jumper' |
-| total           | 数据总数               | Number                                              | 0                                         |
-| data            | 数据                   | Array                                               |                                           |
-| columns         | 列头                   | Array                                               |                                           |
-| pagination      | 是否分页               | Boolean                                             | false                                     |
-| localPagination | 是否启用本地分页       | Boolean                                             | false                                     |
-| mergeProps      | 需要合并的列属性名数组 | String[]                                            | []                                        |
-|                 |                        |                                                     |                                           |
-| @pageSizeChange | pageSize事件参数       | 当前的pageSize                                      |                                           |
-| @pageNoChange   | pageNo事件参数         | 当前的pageNo                                        |                                           |
-|                 |                        |                                                     |                                           |
-| render          | 格式化单元格函数       | render({row,value,prop,$index,pageNo,pageSize})=>{} |                                           |
-|                 |                        |                                                     |                                           |
+| 属性            | 描述                   | 类型                                                   | 默认值                                    |
+| --------------- | ---------------------- | ------------------------------------------------------ | ----------------------------------------- |
+| layout          | 分页布局               | String                                                 | 'total, sizes, prev, pager, next, jumper' |
+| total           | 数据总数               | Number                                                 | 0                                         |
+| data            | 数据                   | Array                                                  |                                           |
+| columns         | 列头                   | Array                                                  |                                           |
+| pagination      | 是否分页               | Boolean                                                | false                                     |
+| localPagination | 是否启用本地分页       | Boolean                                                | false                                     |
+| mergeProps      | 需要合并的列属性名数组 | String[]                                               | []                                        |
+|                 |                        |                                                        |                                           |
+| @pageSizeChange | pageSize事件参数       | 当前的pageSize                                         |                                           |
+| @pageNoChange   | pageNo事件参数         | 当前的pageNo                                           |                                           |
+|                 |                        |                                                        |                                           |
+| render          | 格式化单元格函数       | render({row,cellValue,prop,index,pageNo,pageSize})=>{} |                                           |
+|                 |                        |                                                        |                                           |
 
 下面给是使用实例
 
