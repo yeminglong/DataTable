@@ -42,7 +42,7 @@
     :merge-props="['name', 'age']"
   />
 </template>
-<script setup>
+<script setup lang="jsx">
   import { DataTable } from 'element-plus-data-table/index.js'
   import 'element-plus-data-table/index.css'
 
@@ -53,16 +53,33 @@
       width: 55,
       align: 'center'
     },
-    { prop: 'name', label: '姓名' },
+    {
+      prop: 'name',
+      label: '姓名',
+      children: [
+        { prop: 'name', label: '姓名1' },
+        { prop: 'name2', label: '姓名2' },
+        { prop: 'name3', label: '姓名3' },
+        { prop: 'name4', label: '姓名4' },
+        { prop: 'name5', label: '姓名5' }
+      ]
+    },
     { prop: 'age', label: '年龄' },
     {
       prop: 'address',
       label: '地址',
-      render: ({ value, row, prop, $index }) => {
+      formatter: (row, column, cellValue, index) => {
+        return `我的地址：${cellValue}`
+      },
+      render: ({ row, value, prop, $index }) => {
         return (
-          <button>
+          <el-button
+            onClick={() => {
+              ElMessage.success(`点击了${row.name}的${prop}按钮`)
+            }}
+          >
             <span>{value}</span>和{$index}
-          </button>
+          </el-button>
         )
       }
     }
