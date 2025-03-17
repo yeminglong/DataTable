@@ -1,6 +1,6 @@
 {
   "name": "element-plus-data-table",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "description": "element-plus use Table  Pagination group created DataTable",
   "main": "index.js",
