@@ -1,9 +1,10 @@
 {
   "name": "elementplus-data-table",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "private": false,
   "description": "element plus table DataTable",
   "main": "index.js",
+  "files": ["index.css","index.css.gz","index.js","index.js.gz","index.umd.cjs"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +16,7 @@
     "type": "git",
     "url": "https://github.com/yeminglong/DataTable"
   },
+
   "license": "ISC",
   "dependencies": {
     "element-plus": "^2.8.5"
