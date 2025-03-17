@@ -40,6 +40,9 @@
 </template>
 
 <script setup>
+  import { DataTable } from 'element-plus-data-table/index.js'
+  import 'element-plus-data-table/index.css'
+
   const column = [
     { prop: 'name', label: '姓名' },
     { prop: 'age', label: '年龄' },
