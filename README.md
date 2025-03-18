@@ -28,6 +28,12 @@
 
 下面给是使用实例
 
+[element-plus-data-table - npm](https://www.npmjs.com/package/element-plus-data-table)
+
+```bash
+npm i element-plus-data-table
+```
+
 ```html
 <template>
   <DataTable
