@@ -28,6 +28,10 @@
 
 下面给是使用实例
 
+国内的同步仓库
+
+https://gitee.com/yeminglong/element-plus-data-table
+
 [element-plus-data-table - npm](https://www.npmjs.com/package/element-plus-data-table)
 
 ```bash
